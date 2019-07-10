@@ -1,5 +1,6 @@
 <?php 
 header('Access-Control-Allow-Origin:*');
+header('Content-type: application/json');
   $page = $_GET['page'];
   $id = $_GET['id'];
   $arr2 = array(
@@ -144,5 +145,3 @@ header('Access-Control-Allow-Origin:*');
   }else{
   echo json_encode($arr2);
   }
-
-?>
